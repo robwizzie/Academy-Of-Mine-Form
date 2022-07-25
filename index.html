@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="validation.js"></script>
+</head>
+
+<body>
+
+    <form name="myform" action="thankyou.php" method="post" onsubmit="return validateform();">
+        <h2>Contact Form</h2>
+
+        <p class="firstName">
+            <span class="className">First Name: </span><input type="text" name="firstName" placeholder="Enter First Name"><br>
+        </p>
+        <p class="lastName">
+            <span class="className">Last Name: </span><input type="text" name="lastName" placeholder="Enter Last Name"><br>
+        </p>
+        <p class="email">
+            <span class="className">E-mail: </span><input type="text" name="email" placeholder="Enter Email"><br>
+        </p>
+        <p class="message">
+            <span class="className">Message: </span><textarea name="message" placeholder="Enter Message"></textarea>
+        </p>
+        <p class="submit">
+            <input type="submit">
+        </p>
+    </form>
+</body>
+
+</html>
